@@ -2,7 +2,8 @@
 
 ## Overview
 
-This project demonstrates the use of interrupts and timers in embedded systems using the MSP432P401R microcontroller from Texas Instruments. The main goal is to manage LED states based on button presses and timer interrupts, implementing a simple user interface for mode selection and LED control.
+This project demonstrates the use of interrupts and timers in embedded systems using the MSP432P401R microcontroller from Texas Instruments. The main goal is to manage LED states based on button presses and timer interrupts, implementing a simple user interface for mode selection and LED control. Project was built using Keil IDE.
+
 
 ## Project Structure
 
@@ -60,11 +61,33 @@ The project is structured to achieve the following functionalities:
 
 ## Development Setup
 
-1. **Development Environment:**
-   - Use **Keil IDE** for project creation and management.
-   - Ensure the **MSP432P401R** microcontroller is selected and all necessary libraries and configurations are included.
+### Keil IDE Setup
 
-2. **Configuration Steps:**
+1. **Download and Install Keil IDE:**
+   - Visit the [Keil website](https://www.keil.com/download/) and download the latest version of the Keil MDK (Microcontroller Development Kit).
+   - Follow the installation instructions to install the IDE on your system.
+
+2. **Create a New Project:**
+   - Open Keil IDE and select **Project** > **New Project** from the menu.
+   - Choose a directory and name your project, then select **Save**.
+
+3. **Select Microcontroller:**
+   - In the **Select Device for Target** dialog, choose **Texas Instruments** from the list of manufacturers.
+   - Select **MSP432P401R** as the microcontroller and click **OK**.
+
+4. **Configure Project:**
+   - Go to **Project** > **Options for Target** and configure the necessary settings, including clock configuration and memory settings.
+   - Add the `msp.h` file to your project for peripheral device register definitions.
+
+5. **Add Source Files:**
+   - Right-click on **Source Group 1** in the **Project** window and select **Add New Item** to include your source files.
+
+6. **Build and Debug:**
+   - Click **Build** > **Build Target** to compile the project.
+   - Use **Debug** > **Start/Stop Debug Session** to test and debug your code on the MSP432P401R microcontroller.
+
+
+### Configuration Steps
    - Disable the Watchdog timer.
    - Set up port configurations for switches and LEDs.
    - Configure Timer A for periodic interrupts.
