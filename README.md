@@ -1,8 +1,8 @@
-# LED Control and Timer Interrupt 
+# LED Control and Timer Interrupt
 
 ## Overview
 
-This project demonstrates the use of interrupts and timers in embedded systems. The main goal is to manage LED states based on button presses and timer interrupts, implementing a simple user interface for mode selection and LED control.
+This project demonstrates the use of interrupts and timers in embedded systems using the MSP432P401R microcontroller from Texas Instruments. The main goal is to manage LED states based on button presses and timer interrupts, implementing a simple user interface for mode selection and LED control.
 
 ## Project Structure
 
@@ -61,8 +61,8 @@ The project is structured to achieve the following functionalities:
 ## Development Setup
 
 1. **Development Environment:**
-   - Keil IDE is used for project creation and management.
-   - Ensure all necessary libraries and configurations are included.
+   - Use **Keil IDE** for project creation and management.
+   - Ensure the **MSP432P401R** microcontroller is selected and all necessary libraries and configurations are included.
 
 2. **Configuration Steps:**
    - Disable the Watchdog timer.
@@ -72,5 +72,5 @@ The project is structured to achieve the following functionalities:
 
 ## Notes
 
-- Ensure to refer to the appropriate reference manuals and lecture slides for detailed configuration of interrupts and timers.
+- Ensure to refer to the MSP432P401R datasheet and user manual for detailed configuration of interrupts and timers.
 - Test the system thoroughly to validate correct behavior in all modes.
